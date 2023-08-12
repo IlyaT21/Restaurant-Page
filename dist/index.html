@@ -34,6 +34,7 @@
 		nav a {
 			color: #fff;
 			text-decoration: none;
+			cursor: pointer;
 		}
 
 		.menu-section {
@@ -45,13 +46,19 @@
 		.menu-item {
 			display: flex;
 			justify-content: space-between;
+			align-items: flex-end;
+			gap: 10px;
 			padding: 10px 20px;
 			border-bottom: 1px solid #ccc;
 		}
 
+		.item-info {
+			text-align: left;
+		}
+
 		.contact-section {
 			background-color: #eee;
-			padding: 40px 0;
+			padding: 100px 0;
 			text-align: center;
 		}
 
@@ -67,6 +74,13 @@
 		.description-section {
 			padding: 40px 0;
 			text-align: center;
+			max-width: 60%;
+			margin: auto;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
 		}
 
 		.working-hours {
@@ -87,61 +101,20 @@
 	<header>
 		<h1>Delicious Diner</h1>
 		<nav>
-			<a href="#home">Home</a>
-			<a href="#menu">Menu</a>
-			<a href="#contact">Contact</a>
+			<a id="home">Home</a>
+			<a id="menu">Menu</a>
+			<a id="contact">Contact</a>
 		</nav>
 	</header>
 
 	<div id="content">
-		<section class="description-section">
-			<h2>About Us</h2>
-			<p>
-				Welcome to Le Restaurant, where we serve mouthwatering dishes made from the finest ingredients. Our passion
-				for food drives us to create unique culinary experiences for our guests.
-			</p>
-			<p>
-				Join us for an unforgettable dining experience that will delight your taste buds and leave you craving for
-				more.
-			</p>
-		</section>
-
-		<section class="menu-section" id="menu">
-			<h2>Our Menu</h2>
-			<div class="menu-item">
-				<span>Appetizer</span>
-				<span>$8.99</span>
-			</div>
-			<div class="menu-item">
-				<span>Main Course</span>
-				<span>$16.99</span>
-			</div>
-			<div class="menu-item">
-				<span>Dessert</span>
-				<span>$6.99</span>
-			</div>
-		</section>
-
-		<section class="contact-section" id="contact">
-			<h2>Contact Us</h2>
-			<div class="contact-info">
-				<p>Address: 123 Main St, City</p>
-				<p>Phone: (555) 123-4567</p>
-				<p>Email: info@deliciousdiner.com</p>
-			</div>
-		</section>
-
-		<section class="working-hours">
-			<h2>Working Hours</h2>
-			<p>Monday - Friday: 11:00 AM - 10:00 PM</p>
-			<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
-		</section>
+		<!-- JS populated -->
 	</div>
 
 	<footer class="footer">
 		<div>
 			<p>&copy; 2023 Delicious Diner. All rights reserved.</p>
-			<p>Website by YourName</p>
+			<p>Website by <a href="https://github.com/IlyaT21">IlyaT21</a></p>
 		</div>
 	</footer>
 	<script src="main.js"></script>
